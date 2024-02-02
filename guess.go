@@ -12,7 +12,7 @@ const biggestPossibleNumberToGuess = 100;
 func main() {
     fmt.Println("Please Guess the number in range 0..99")
 	var numberToGuess = rand.Intn(biggestPossibleNumberToGuess)
-	fmt.Println("The number is %d", numberToGuess)
+	fmt.Printf("The number is %d\n", numberToGuess)
 	var guessCount = 0
 	
 	guessedRight := false
