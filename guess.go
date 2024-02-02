@@ -50,5 +50,11 @@ func evaluateAnswer(answer, guess int) (quessedRight bool, message string) {
 	// 1) guessedRight boolean value which should be true, if guess is equal to answer and false otherwise
 	// 2) message should indicate if guess is bigger or smaller than the answer and  
 
-	return answer == guess, "Logic hasn't been implemented"
+	if guess < answer {
+		return false, "The answer is bigger than your guess"
+	} else if guess > answer {
+		return false, "The answer is smaller than your guess" 
+	} else {
+		return true, "You guessed correctly 🎉🎉🎉"
+	}
 }
